@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: #FBEBD2; -webkit-text-size-adjust: 100%; }
+  body {
+    @apply text-ink antialiased font-sans;
+    min-height: 100vh;
+    background-color: #FBEBD2;
+    background-image: linear-gradient(180deg,
+      #4A0D09 0px, #7A1A0C 130px, #AE3813 280px, #D8662A 440px,
+      #EC9650 620px, #F6C998 820px, #FBE3C4 1000px, #FBEBD2 1200px);
+    background-repeat: no-repeat;
+  }
+  h1, h2, h3 { font-weight: 500; letter-spacing: -0.02em; }
+  :focus-visible { outline: 2px solid #15110E; outline-offset: 2px; border-radius: 10px; }
+  .on-dark :focus-visible { outline-color: #fff; }
+  input:focus-visible, select:focus-visible, textarea:focus-visible { outline-offset: 0; border-color: #15110E; }
+  input[type="date"] { min-height: 44px; }
+  ::selection { background: #F6C79C; }
+}
+
+@layer components {
+  .glass { background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.22); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  .holo { background: linear-gradient(135deg, #1D1814 0%, #3A2A22 100%); }
+  .mint-panel { background: #F5F0EA; }
+}

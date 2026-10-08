@@ -1,0 +1,9 @@
+node_modules
+.next
+.next-*
+.env*.local
+*.tsbuildinfo
+out
+.firebase
+*.log
+.DS_Store
